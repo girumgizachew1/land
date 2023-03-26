@@ -1,19 +1,23 @@
 import React from 'react'
 import Slider from 'react-slick'
 import FeedBackCard from './Feedbackcard'
-
+// Import css files
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { useDarkMode } from '../context/context';
 const FeedBack = () => {
+    const {darkMode} = useDarkMode();
     var settings = {
         dots:true,
         infinite:false,
         speed:500,
-        slidesToShow:2,
+        slidesToShow:3,
         slidesToScroll:1,
         responsive:[
         {
             breakpoint:1024,
             settings:{
-                slidesToShow:1,
+                slidesToShow:2,
                 slidesToScroll:1,
                 infinite:false,
                 dots:true
@@ -40,10 +44,10 @@ const FeedBack = () => {
         ]
     }
   return (
-    <section className='w-full bg-white py-24 p-4'>
-        <div className='md:max-w-[1100px] m-auto max-w-[400px]'>
-        <h1 className='py-4 text-3xl font-bold'>Students <span className='text-[#20B486]'>Feed back</span></h1>
-            <p className='text-[#6D737A] py-2'>Various versions have evolved over the years, sometimes by accident.</p>
+    <section className={`w-full py-24 p-4  ${darkMode === true ? 'bg-zinc-800 shadow-lg shadow-zinc-900/50 text-zinc-200' : 'bg-zinc-200 text-zinc-800 shadow-lg shadow-white/50'}`}>
+        <div className='md:max-w-[1400px] m-auto max-w-[400px] mx-auto'>
+        <h1 className='py-4 text-3xl font-bold'>Our Models <span className='text-[#20B486]'>Success Stories </span></h1>
+            <p className='text-[#6D737A] py-2'>The Testimonials were published with the consent of models</p>
             <Slider {...settings}>
                 <FeedBackCard/>
                 <FeedBackCard/>

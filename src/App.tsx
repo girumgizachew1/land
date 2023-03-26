@@ -6,7 +6,8 @@ import { Navbar } from './Components/Navbar'
 import { useDarkMode } from './context/context'
 import Hero from './Components/Hero'
 import { Footer } from './Components/Footer'
-import { Feedback } from '@mui/icons-material'
+import FeedBack from './Components/Feedback'
+import Agency from './Components/Agency'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,7 +17,8 @@ function App() {
          <div className='z-10' > <Navbar /></div>
         <div>
           <Hero/>
-          <Feedback/>
+          <Agency/>
+          <FeedBack/>
           <Footer/>
         </div>
     </div>
