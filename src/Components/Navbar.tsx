@@ -20,16 +20,30 @@ function Navbar() {
   }
 
   return (
-    <div className={`h-20 flex justify-between px-5 md:px-20 py-5  ${darkMode === true? 'bg-zinc-800 shadow-lg shadow-zinc-900/50 ' :'bg-zinc-100 shadow-lg shadow-white/50'}`}>
-      <div className='logo w-64 h-64 -mt-16'>
+    <div className={`h-14 flex justify-between px-5 md:px-20 py-5  ${darkMode === true ? 'bg-zinc-700 shadow-lg shadow-zinc-900/50 ' : 'bg-zinc-100 shadow-lg shadow-white/50'}`}>
+      <div className='logo w-40 h-40 -mt-12 -ml-10 md:ml-1 justify-center'>
         {darkMode
           ? <img src='./joshco1.png' alt='Dark logo' />
           : <img src='./joshco2.png' alt='Light logo' />
         }
       </div>
       <div className='menus flex space-x-5 items-center ' >
+        <div className="hidden md:flex flex-row font-medium">
+          <a href="/" className={`py-2 px-4 my-2 rounded-lg text-sm ${darkMode ? 'text-zinc-200' : 'text-zinc-800'}`}>
+            Home
+          </a>
+          <a href="/aboutus" className={`py-2 px-4 my-2 rounded-lg text-sm ${darkMode ? 'text-zinc-200' : 'text-zinc-800'}`}>
+            About Us
+          </a>
+          <a href="/ourmodel" className={`py-2 px-4 my-2 rounded-lg text-sm ${darkMode ? 'text-zinc-200' : 'text-zinc-800'}`}>
+            Our Model
+          </a>
+          <a href="/contact" className={`py-2 px-4 my-2 rounded-lg text-sm ${darkMode ? 'text-zinc-200' : 'text-zinc-800'}`}>
+            Contact
+          </a>
+        </div>
         <div
-          className='hidden md:block relative inline-block w-10 h-6 py-1 px-1  rounded-full overflow-hidden bg-blue-600 dark:bg-blue-600 cursor-pointer'
+          className='hidden md:block relative inline-block w-10 h-6 py-1 px-1  rounded-full overflow-hidden bg-zinc-400 dark:bg-zinc-400 cursor-pointer'
           onClick={handleDarkModeToggle}
         >
           <div
@@ -39,15 +53,11 @@ function Navbar() {
           </div>
 
         </div>
-        <div className="hidden md:block">
-          <button className='bg-blue-600 px-4 py-1 rounded-lg text-sm ' >I'm Photographer</button>
-        </div>
-        <div className="hidden md:block">
-          <button className='bg-blue-600 px-4 py-1 rounded-lg text-sm '  >I'm Partner</button>
-        </div>
+
+
         <div className="block md:hidden">
           <button className=' px-4 py-1 rounded-lg text-sm ' onClick={handleMenuToggle}>
-            <svg viewBox="0 0 24 24" className="h-6 w-6 fill-current">
+            <svg viewBox="0 0 24 24" className="h-6 w-6 fill-current text-zinc-800">
               {menuOpen ? (
                 <path
                   fillRule="evenodd"
@@ -72,16 +82,22 @@ function Navbar() {
           }`}
         onClick={handleMenuToggle}
       >
-        <div className={`block md:hidden fixed top-0 left-0 w-3/4 h-full z-50 bg-zinc-900 shadow-md transition-transform duration-300 ease-in-out transform ${menuOpen ? 'translate-x-0' : '-translate-x-full'
+        <div className={`block md:hidden fixed top-0 left-0 w-3/4 h-full z-50 ${darkMode ? 'bg-zinc-800' : 'bg-zinc-200'} shadow-md transition-transform duration-300 ease-in-out transform ${menuOpen ? 'translate-x-0' : '-translate-x-full'
           }`}>
           <div className="flex flex-col justify-between py-10 h-full px-4">
             <div className='flex flex-col ' >
-              <button className='py-2 bg-white px-4 my-2 rounded-lg text-sm text-black' onClick={handleMenuItemClick}>
-                I'm Photographer
-              </button>
-              <button className='py-2 bg-white px-4 my-2 rounded-lg text-sm text-black ' onClick={handleMenuItemClick}>
-                I'm Partner
-              </button>
+              <a href="/" className={`py-2 px-4 my-2 rounded-lg text-sm ${darkMode ? 'text-white' : 'text-black'}`}>
+                Home
+              </a>
+              <a href="/aboutus" className={`py-2 px-4 my-2 rounded-lg text-sm ${darkMode ? 'text-white' : 'text-black'}`}>
+                About Us
+              </a>
+              <a href="/ourmodel" className={`py-2 px-4 my-2 rounded-lg text-sm ${darkMode ? 'text-white' : 'text-black'}`}>
+                Our Model
+              </a>
+              <a href="/contact" className={`py-2 px-4 my-2 rounded-lg text-sm ${darkMode ? 'text-white' : 'text-black'}`}>
+                Contact
+              </a>
             </div>
             <div className='flex justify-between' >
               <div
