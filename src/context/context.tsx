@@ -1,21 +1,32 @@
 import { createContext, useContext, useState } from "react";
 
-
-const DarkModeContext = createContext({});
-
-export const ModeContextProvider =( props: any )=>{
-    const [darkMode, setDarkMode] = useState(false)
-
-    return(
-        <DarkModeContext.Provider 
-            value={{darkMode, setDarkMode}}
-        >
-            {props.children}
-        </DarkModeContext.Provider>
-    )
+interface ContextType {
+  darkMode: boolean;
+  setDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export const useDarkMode =()=>{
-    const context = useContext(DarkModeContext)
-    return context;
+const DarkModeContext = createContext<ContextType>({
+  darkMode: false,
+  setDarkMode: () => {},
+});
+
+interface ModeContextProviderProps {
+  children: React.ReactNode;
 }
+
+export const ModeContextProvider: React.FC<ModeContextProviderProps> = ({
+  children,
+}) => {
+  const [darkMode, setDarkMode] = useState(false);
+
+  return (
+    <DarkModeContext.Provider value={{ darkMode, setDarkMode }}>
+      {children}
+    </DarkModeContext.Provider>
+  );
+};
+
+export const useDarkMode = (): ContextType => {
+  const context = useContext(DarkModeContext);
+  return context;
+};
