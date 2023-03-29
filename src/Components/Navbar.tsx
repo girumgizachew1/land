@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useDarkMode } from '../context/context';
-
+import { Link } from 'react-router-dom';
 function Navbar() {
   const { darkMode, setDarkMode } = useDarkMode();
 
@@ -20,7 +20,7 @@ function Navbar() {
   }
 
   return (
-    <div className={`h-14 flex justify-between px-5 md:px-20 py-5  ${darkMode === true ? 'bg-zinc-700 shadow-lg shadow-zinc-900/50 ' : 'bg-zinc-100 shadow-lg shadow-white/50'}`}>
+    <div className={`h-14 flex justify-between px-5 md:px-20 py-5  ${darkMode === true ? 'bg-gray-900 shadow-lg shadow-zinc-900/50 ' : 'bg-gray-100 shadow-lg shadow-white/50'}`}>
       <div className='logo w-40 h-40 -mt-12 -ml-10 md:ml-1 justify-center'>
         {darkMode
           ? <img src='./joshco1.png' alt='Dark logo' />
@@ -29,25 +29,25 @@ function Navbar() {
       </div>
       <div className='menus flex space-x-5 items-center ' >
         <div className="hidden md:flex flex-row font-medium">
-          <a href="/" className={`py-2 px-4 my-2 rounded-lg text-sm ${darkMode ? 'text-zinc-200' : 'text-zinc-800'}`}>
+          <Link to="/" className={`py-2 px-4 my-2 rounded-lg text-sm ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>
             Home
-          </a>
-          <a href="/aboutus" className={`py-2 px-4 my-2 rounded-lg text-sm ${darkMode ? 'text-zinc-200' : 'text-zinc-800'}`}>
+          </Link>
+          <Link to="/aboutus" className={`py-2 px-4 my-2 rounded-lg text-sm ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>
             About Us
-          </a>
-          <a href="/ourmodel" className={`py-2 px-4 my-2 rounded-lg text-sm ${darkMode ? 'text-zinc-200' : 'text-zinc-800'}`}>
+          </Link>
+          <Link to="/ourmodel" className={`py-2 px-4 my-2 rounded-lg text-sm ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>
             Our Model
-          </a>
-          <a href="/contact" className={`py-2 px-4 my-2 rounded-lg text-sm ${darkMode ? 'text-zinc-200' : 'text-zinc-800'}`}>
+          </Link>
+          <Link to="/contact" className={`py-2 px-4 my-2 rounded-lg text-sm ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>
             Contact
-          </a>
+          </Link>
         </div>
         <div
           className='hidden md:block relative inline-block w-10 h-6 py-1 px-1  rounded-full overflow-hidden bg-zinc-400 dark:bg-zinc-400 cursor-pointer'
           onClick={handleDarkModeToggle}
         >
           <div
-            className={`absolute w-4 h-4 bg-gray-700 rounded-full shadow-md transform transition-transform duration-300 ease-in-out ${darkMode ? 'translate-x-4' : ''
+            className={`absolute w-4 h-4 bg-gray-900 rounded-full shadow-md transform transition-transform duration-300 ease-in-out ${darkMode ? 'translate-x-4' : ''
               }`}
           >
           </div>
@@ -57,7 +57,7 @@ function Navbar() {
 
         <div className="block md:hidden">
           <button className=' px-4 py-1 rounded-lg text-sm ' onClick={handleMenuToggle}>
-            <svg viewBox="0 0 24 24" className="h-6 w-6 fill-current text-zinc-800">
+            <svg viewBox="0 0 24 24" className="h-6 w-6 fill-current text-gray-500">
               {menuOpen ? (
                 <path
                   fillRule="evenodd"
@@ -78,11 +78,11 @@ function Navbar() {
 
       {/* Menu component */}
       <div
-        className={`fixed top-0 left-0 w-full h-full z-50 bg-gray-900 bg-opacity-25 transition-opacity duration-300 ease-in-out ${menuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+        className={`fixed top-0 left-0 w-full h-full z-50 text-gray-500 bg-opacity-25 transition-opacity duration-300 ease-in-out ${menuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
           }`}
         onClick={handleMenuToggle}
       >
-        <div className={`block md:hidden fixed top-0 left-0 w-3/4 h-full z-50 ${darkMode ? 'bg-zinc-800' : 'bg-zinc-200'} shadow-md transition-transform duration-300 ease-in-out transform ${menuOpen ? 'translate-x-0' : '-translate-x-full'
+        <div className={`block md:hidden fixed top-0 left-0 w-3/4 h-full z-50 ${darkMode ? 'bg-gray-900' : 'bg-gray-100'} shadow-md transition-transform duration-300 ease-in-out transform ${menuOpen ? 'translate-x-0' : '-translate-x-full'
           }`}>
           <div className="flex flex-col justify-between py-10 h-full px-4">
             <div className='flex flex-col ' >
@@ -101,11 +101,11 @@ function Navbar() {
             </div>
             <div className='flex justify-between' >
               <div
-                className='relative inline-block w-10 h-6 py-1 px-1  rounded-full overflow-hidden bg-blue-600 dark:bg-blue-600 cursor-pointer'
+                className='relative inline-block w-10 h-6 py-1 px-1  rounded-full overflow-hidden bg-gray-300 dark:bg-gray-300 cursor-pointer'
                 onClick={handleDarkModeToggle}
               >
                 <div
-                  className={`absolute w-4 h-4 bg-gray-700 rounded-full shadow-md transform transition-transform duration-300 ease-in-out ${darkMode ? 'translate-x-4' : ''
+                  className={`absolute w-4 h-4 bg-gray-900 rounded-full shadow-md transform transition-transform duration-300 ease-in-out ${darkMode ? 'translate-x-4' : ''
                     }`}
                 >
                 </div>
