@@ -44,7 +44,7 @@ const FeedBack = () => {
         ]
     }
   return (
-    <section className={`w-full py-24 p-4  ${darkMode === true ? 'bg-zinc-800 shadow-lg shadow-zinc-900/50 text-zinc-200' : 'bg-zinc-200 text-zinc-800 shadow-lg shadow-white/50'}`}>
+    <section className={`w-full py-24 p-4  ${darkMode === true ? 'bg-gray-800 shadow-lg shadow-gray-900/50 text-gray-200' : 'bg-gray-200 text-gray-800 shadow-lg shadow-white/50'}`}>
         <div className='md:max-w-[1400px] m-auto max-w-[400px] mx-auto'>
         <h1 className='py-4 text-3xl font-bold'>Our Models <span className='text-[#20B486]'>Success Stories </span></h1>
             <p className='text-[#6D737A] py-2'>The Testimonials were published with the consent of models</p>
