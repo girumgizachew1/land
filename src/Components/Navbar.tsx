@@ -20,7 +20,7 @@ function Navbar() {
   }
 
   return (
-    <div className={`h-14 flex justify-between px-5 md:px-20 py-5  ${darkMode === true ? 'bg-gray-900 shadow-lg shadow-zinc-900/50 ' : 'bg-gray-100 shadow-lg shadow-white/50'}`}>
+    <div className={`fontmono fixed w-full h-16 flex justify-between px-5 md:px-20 py-5  ${darkMode === true ? 'bg-gray-900 shadow-lg shadow-zinc-900/50 ' : 'bg-gray-100 shadow-lg shadow-white/50'}`}>
       <div className='logo w-40 h-40 -mt-12 -ml-10 md:ml-1 justify-center'>
         {darkMode
           ? <img src='./joshco1.png' alt='Dark logo' />
@@ -111,10 +111,7 @@ function Navbar() {
                 </div>
 
               </div>
-              <div>
-                <img src='./flag.png' className='w-9 h-6 object-contain ' style={{ zIndex: -1 }} alt='flag' />
 
-              </div>
             </div>
           </div>
 

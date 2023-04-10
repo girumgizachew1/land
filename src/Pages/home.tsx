@@ -1,9 +1,11 @@
 import React from 'react'
 import Slider from 'react-slick'
 import Agency from '../Components/Agency'
+import Calanderly from '../Components/Calanderly'
 import FeedBack from '../Components/Feedback'
 import { Footer } from '../Components/Footer'
 import Hero from '../Components/Hero'
+import Section from '../Components/Section'
 import { useDarkMode } from '../context/context'
 
 function home() {
@@ -33,8 +35,10 @@ function home() {
     <div className='w-full h-full'>
       <div>
         <Hero />
+        <Section/>
         <Agency />
-                <FeedBack />
+        <FeedBack />
+        
       </div>
     </div>
   );

@@ -1,10 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { useDarkMode } from '../context/context'
 
 function Agency() {
     const { darkMode } = useDarkMode()
     return (
-        <div className={`flex flex-col justify-center first-letter py-20  ${darkMode === true ? 'bg-gray-900 text-gray-300 shadow-lg shadow-zinc-900/50 ' : 'bg-gray-100 text-gray-700 shadow-lg shadow-white/50'}`}>
+        <div className={`flex flex-col fontmono justify-center first-letter py-20  ${darkMode === true ? 'bg-gray-900 text-gray-300 shadow-lg shadow-zinc-900/50 ' : 'bg-gray-100 text-gray-700 shadow-lg shadow-white/50'}`}>
             <div className="text-center py-2">
             <h1 className=" text-lg md:text-2xl mt-2 ">We Build Outstanding OnlyFans Careers.</h1>
                 <p className="text-2xl   md:text-4xl mt-4 font-bold">Our Agency In Numbers</p>
@@ -30,7 +31,9 @@ function Agency() {
 
             </div>
             <div>
-                <button className="bg-cyan-900 text-white text-base px-4 py-4 mt-4 ">Book a call</button>
+                <Link
+                to = 'https://calendly.com/girumegizachew'
+                className="bg-cyan-900 text-white text-base px-4 py-4 mt-4 ">Book a call</Link>
             </div>
         </div>
 

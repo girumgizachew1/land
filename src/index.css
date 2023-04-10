@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.fontmono {
+    font-family: 'Muekta', sans-serif;
+}

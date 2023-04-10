@@ -12,7 +12,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './Pages/home'
 import About from './Pages/About'
 import Ourmodel from './Pages/Ourmodel'
-import Contack from './Pages/Contact'
+import Contact from './Pages/Contact'
 function App() {
   const [count, setCount] = useState(0)
   const { darkMode ,setDarkMode } = useDarkMode();
@@ -24,9 +24,8 @@ function App() {
             <Route path="/" element={<Home />} />
               <Route path="/aboutus" element={<About />} />
               <Route path="/ourmodel" element={<Ourmodel />} />
-              <Route path="/contact" element={<Ourmodel />} />
+              <Route path="/contact" element={<Contact />} />
           </Routes>
-         
         </div>
         <div><Footer/></div>
     </div>
