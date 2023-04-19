@@ -17,7 +17,7 @@ function App() {
   const [count, setCount] = useState(0)
   const { darkMode ,setDarkMode } = useDarkMode();
   return (
-    <div className={`h-full w-full flex flex-col text-white ${darkMode === true? 'bg-gray-800 ' :'bg-gray-200'}`}>
+    <div className={`h-full w-full flex flex-col text-white ${darkMode === true? 'bg-gray-900 ' :'bg-gray-200'}`}>
          <div className='z-10' > <Navbar /></div>
         <div>
           <Routes>

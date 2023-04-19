@@ -7,6 +7,7 @@ import { Footer } from '../Components/Footer'
 import Hero from '../Components/Hero'
 import Section from '../Components/Section'
 import { useDarkMode } from '../context/context'
+import Detailed from '../Components/Detailed'
 
 function home() {
   const { darkMode } = useDarkMode()
@@ -36,6 +37,7 @@ function home() {
       <div>
         <Hero />
         <Section/>
+        <Detailed/>
         <Agency />
         <FeedBack />
         

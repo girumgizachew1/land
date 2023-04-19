@@ -3,7 +3,7 @@ import Gallery from '../Components/Models/Gallary'
 
 function Ourmodel() {
   return (
-<div className="h-full w-full bg-cover bg-center relative" style={{ backgroundImage: "url('/bg2.webp')" }}>
+<div className="h-full w-full bg-cover bg-center relative">
       <Gallery />
     </div>
   )

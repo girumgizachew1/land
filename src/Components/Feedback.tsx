@@ -1,6 +1,11 @@
 import React from 'react'
 import Slider from 'react-slick'
-import FeedBackCard from './Feedbackcard'
+import FeedBackCard from './Cards/Feedbackcard'
+import FeedBackCard1 from './Cards/Feedbackcard1'
+import FeedBackCard2 from './Cards/Feedbackcard2'
+import FeedBackCard3 from './Cards/Feedbackcard3'
+import FeedBackCard4 from './Cards/Feedbackcard4'
+
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -50,10 +55,10 @@ const FeedBack = () => {
             <p className='text-[#6D737A] py-2'>The Testimonials were published with the consent of models</p>
             <Slider {...settings}>
                 <FeedBackCard/>
-                <FeedBackCard/>
-                <FeedBackCard/>
-                <FeedBackCard/>
-                <FeedBackCard/>
+                <FeedBackCard1/>
+                <FeedBackCard2/>
+                <FeedBackCard3/>
+                <FeedBackCard4/>
             </Slider>
         </div>
     </section>    
