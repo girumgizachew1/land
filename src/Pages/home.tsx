@@ -45,7 +45,6 @@ function App() {
         <Model />
         <Faq />
         <FeedBack />
-        <Footer />
       </div>
     </div>
   );
