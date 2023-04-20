@@ -21,25 +21,25 @@ function Navbar() {
 
   return (
     <div className={`fontmono fixed w-full h-16 flex justify-between px-5 md:px-20 py-5  ${darkMode === true ? 'bg-gray-900 shadow-lg shadow-zinc-900/50 ' : 'bg-gray-100 shadow-lg shadow-white/50'}`}>
-      <div className='logo w-40 h-40 -mt-12 -ml-10 md:ml-1 justify-center'>
+      <div className='logo w-48 h-48 -mt-12 -ml-10 md:ml-1 justify-center'>
         {darkMode
           ? <img src='./joshco1.png' alt='Dark logo' />
           : <img src='./joshco2.png' alt='Light logo' />
         }
       </div>
       <div className='menus flex space-x-5 items-center ' >
-        <div className="hidden md:flex flex-row font-medium">
-          <Link to="/" className={`py-2 px-4 my-2 rounded-lg text-sm ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>
-            Home
+        <div className="hidden md:flex flex-row font-medium leading-10 tracking-tight ">
+          <Link to="/" className={`py-2 px-4 my-2 rounded-lg text-base ${darkMode ? 'text-gray-400' : 'text-gray-700'}`}>
+            HOME
           </Link>
-          <Link to="/aboutus" className={`py-2 px-4 my-2 rounded-lg text-sm ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>
-            About Us
+          <Link to="/aboutus" className={`py-2 px-4 my-2 rounded-lg text-base ${darkMode ? 'text-gray-400' : 'text-gray-700'}`}>
+            ABOUT US
           </Link>
-          <Link to="/ourmodel" className={`py-2 px-4 my-2 rounded-lg text-sm ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>
-            Our Model
+          <Link to="/ourmodel" className={`py-2 px-4 my-2 rounded-lg text-base ${darkMode ? 'text-gray-400' : 'text-gray-700'}`}>
+            OUR MODEL
           </Link>
-          <Link to="/contact" className={`py-2 px-4 my-2 rounded-lg text-sm ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>
-            Contact
+          <Link to="/contact" className={`py-2 px-4 my-2 rounded-lg text-base ${darkMode ? 'text-gray-400' : 'text-gray-700'}`}>
+            CONTACT
           </Link>
         </div>
         <div

@@ -1,8 +1,17 @@
 import React from "react";
 import image1 from '../../assets/image1.jpg'
-import image2 from '../../assets/people1.jpg'
-import image3 from '../../assets/people2.jpg'
-import image4 from '../../assets/people3.jpg'
+import model1 from '../../assets/model1.avif'
+import model2 from '../../assets/model2.jpg'
+import model3 from '../../assets/model3.jpeg'
+import model4 from '../../assets/model4.jpg'
+import model6 from '../../assets/model6.jpg'
+import model5 from '../../assets/model5.jpg'
+import model7 from '../../assets/model7.jpg'
+import model8 from '../../assets/model8.jpg'
+import model9 from '../../assets/model9.jpg'
+import model10 from '../../assets/model10.jpg'
+import model11 from '../../assets/model11.jpg'
+import model12 from '../../assets/model12.avif'
 
 import { useDarkMode } from "../../context/context";
 const Gallery = () => {
@@ -41,15 +50,15 @@ const Gallery = () => {
                 <div className="container mx-auto grid grid-cols-1 gap-1 p-4  lg:grid-cols-4 transition-all duration-500 ease-in-out">
                     <div className='relative w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 hover:opacity-90' >
                         <img
-                            src={image1}
+                            src={model2}
                             alt="Gallery"
                             className="filter brightness-85 opacity-90  grayscale object-center object-cover "
                         />
                         <div className="absolute bottom-0 left-0 w-full h-full bg-gray-900 text-white p-2 opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-90 flex flex-col items-center justify-center">
                             <div className="bg-yellow-700 rounded-xl p-8 flex flex-col items-center justify-center opacity-100" >
-                                <h1 className="text-base md:text-2xl font-bold mb-2">Katerina Alvarez</h1>
+                                <h1 className="text-base md:text-2xl font-bold mb-2">Isabella Garcia</h1>
                                 <h1 className="text-sm md:text-lg mb-2">Onlyfans Model</h1>
-                                <h1 className="text-xs md:text-base">From $700 to $2000 per month</h1>
+                                <h1 className="text-xs md:text-base">From $1200 to $2500 per month</h1>
                             </div>
                         </div>
                     </div>
@@ -59,13 +68,13 @@ const Gallery = () => {
                         <img
                             alt="Gallery"
                             className="w-full h-full filter brightness-85 opacity-90  object-center object-cover rounded shadow-sm min-h-48 hover:opacity-90"
-                            src={image1}
+                            src={model1}
                         />
                         <div className="absolute bottom-0 left-0 w-full h-full bg-gray-900 text-white p-2 opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-90 flex flex-col items-center justify-center">
                             <div className="bg-yellow-700 rounded-xl p-8 flex flex-col items-center justify-center opacity-100" >
-                            <h1 className="text-base md:text-lg  font-bold mb-2">Katerina Alvarez</h1>
+                            <h1 className="text-base md:text-lg  font-bold mb-2">Lily Johnson</h1>
                             <h1 className="text-sm md:text-base mb-2">Onlyfans Model</h1>
-                            <h1 className="text-xs md:text-sm">From $700 to $2000 per month</h1>
+                            <h1 className="text-xs md:text-sm">From $1100 to $4500 per month</h1>
                         </div>
                         </div>
 
@@ -75,13 +84,13 @@ const Gallery = () => {
                         <img
                             alt="Gallery"
                             className="w-full h-full filter brightness-85 opacity-90  object-center object-cover rounded shadow-sm min-h-48 hover:opacity-90"
-                            src={image1}
+                            src={model3}
                         />
                         <div className="absolute bottom-0 left-0 w-full h-full bg-gray-900 text-white p-2 opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-90 flex flex-col items-center justify-center">
                         <div className="bg-red-700 rounded-xl p-8 flex flex-col items-center justify-center opacity-100" >
-                            <h1 className="text-base md:text-lg  font-bold mb-2">Katerina Alvarez</h1>
+                            <h1 className="text-base md:text-lg  font-bold mb-2">Sophia Rodriguez</h1>
                             <h1 className="text-sm md:text-base mb-2">Onlyfans Model</h1>
-                            <h1 className="text-xs md:text-sm">From $700 to $2000 per month</h1>
+                            <h1 className="text-xs md:text-sm">From $400 to $3700 per month</h1>
                         </div>
                         </div>
                     </div>
@@ -90,11 +99,11 @@ const Gallery = () => {
                         <img
                             alt="Gallery"
                             className="w-full h-full filter brightness-85 opacity-90  object-center object-cover rounded shadow-sm min-h-48 hover:opacity-90"
-                            src={image1}
+                            src={model5}
                         />
                         <div className="absolute bottom-0 left-0 w-full h-full bg-gray-900 text-white p-2 opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-90 flex flex-col items-center justify-center">
                         <div className="bg-red-700 rounded-xl p-8 flex flex-col items-center justify-center opacity-100" >
-                            <h1 className="text-base md:text-lg  font-bold mb-2">Katerina Alvarez</h1>
+                            <h1 className="text-base md:text-lg  font-bold mb-2">Emily Martinez</h1>
                             <h1 className="text-sm md:text-base mb-2">Onlyfans Model</h1>
                             <h1 className="text-xs md:text-sm">From $700 to $2000 per month</h1>
                         </div>
@@ -106,19 +115,19 @@ const Gallery = () => {
                         <img
                             alt="Gallery"
                             className="w-full h-full filter brightness-85 opacity-90  object-center object-cover rounded shadow-sm min-h-48 hover:opacity-90"
-                            src={image1}
+                            src={model6}
                         />
                         <div className="absolute bottom-0 left-0 w-full h-full bg-gray-900 text-white p-2 opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-90 flex flex-col items-center justify-center">
                             <div className="bg-yellow-700 rounded-xl p-8 flex flex-col items-center justify-center opacity-100" >
-                            <h1 className="text-base md:text-lg  font-bold mb-2">Katerina Alvarez</h1>
+                            <h1 className="text-base md:text-lg  font-bold mb-2">Madison Kim</h1>
                             <h1 className="text-sm md:text-base mb-2">Onlyfans Model</h1>
-                            <h1 className="text-xs md:text-sm">From $700 to $2000 per month</h1>
+                            <h1 className="text-xs md:text-sm">From $1700 to $2400 per month</h1>
                         </div>
                         </div>
                     </div>
                     <div className='relative w-full h-full  rounded shadow-sm col-span-2 row-span-2 min-h-96 md:col-start-1 md:row-start-1 ' >
                         <img
-                            src={image1}
+                            src={model8}
                             alt="Gallery"
                             className="filter brightness-85 opacity-90  grayscale object-center object-cover "
                         />
@@ -126,7 +135,7 @@ const Gallery = () => {
                             <div className="bg-red-700 rounded-xl p-8 flex flex-col items-center justify-center opacity-100" >
                                 <h1 className="text-base md:text-2xl font-bold mb-2">Katerina Alvarez</h1>
                                 <h1 className="text-sm md:text-lg mb-2">Onlyfans Model</h1>
-                                <h1 className="text-xs md:text-base">From $700 to $2000 per month</h1>
+                                <h1 className="text-xs md:text-base">From $550 to $1400 per month</h1>
                             </div>
                         </div>
                     </div>
@@ -142,15 +151,15 @@ const Gallery = () => {
             <div className="container mx-auto grid grid-cols-1 gap-1 p-4  lg:grid-cols-4 transition-all duration-500 ease-in-out">
                 <div className='relative w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 hover:opacity-90' >
                     <img
-                        src={image1}
+                        src={model10}
                         alt="Gallery"
                         className="filter brightness-85 opacity-90  grayscale object-center object-cover "
                     />
                     <div className="absolute bottom-0 left-0 w-full h-full bg-gray-900 text-white p-2 opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-90 flex flex-col items-center justify-center">
                         <div className="bg-red-700 rounded-xl p-8 flex flex-col items-center justify-center opacity-100" >
-                            <h1 className="text-base md:text-2xl font-bold mb-2">Katerina Alvarez</h1>
+                            <h1 className="text-base md:text-2xl font-bold mb-2">Ava Wong</h1>
                             <h1 className="text-sm md:text-lg mb-2">Onlyfans Model</h1>
-                            <h1 className="text-xs md:text-base">From $700 to $2000 per month</h1>
+                            <h1 className="text-xs md:text-base">From $1200 to $2000 per month</h1>
                         </div>
                     </div>
                 </div>
@@ -160,13 +169,13 @@ const Gallery = () => {
                     <img
                         alt="Gallery"
                         className="w-full h-full filter brightness-85 opacity-90  object-center object-cover rounded shadow-sm min-h-48 hover:opacity-90"
-                        src={image1}
+                        src={model12}
                     />
                     <div className="absolute bottom-0 left-0 w-full h-full bg-gray-900 text-white p-2 opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-90 flex flex-col items-center justify-center">
                         <div className="bg-yellow-700 rounded-xl p-8 flex flex-col items-center justify-center opacity-100" >
-                            <h1 className="text-base md:text-lg  font-bold mb-4">Katerina Alvarez</h1>
+                            <h1 className="text-base md:text-lg  font-bold mb-4">Abigail Patel</h1>
                             <h1 className="text-sm md:text-base mb-4">Onlyfans Model</h1>
-                            <h1 className="text-xs md:text-sm">From $700 to $2000 per month</h1>
+                            <h1 className="text-xs md:text-sm">From $600 to $1800 per month</h1>
                         </div>
                     </div>
 
@@ -176,13 +185,13 @@ const Gallery = () => {
                     <img
                         alt="Gallery"
                         className="w-full h-full filter brightness-85 opacity-90  object-center object-cover rounded shadow-sm min-h-48 hover:opacity-90"
-                        src={image1}
+                        src={model7}
                     />
                     <div className="absolute bottom-0 left-0 w-full h-full bg-gray-900 text-white p-2 opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-90 flex flex-col items-center justify-center">
                         <div className="bg-yellow-700 rounded-xl p-8 flex flex-col items-center justify-center opacity-100" >
-                            <h1 className="text-base md:text-lg  font-bold mb-2">Katerina Alvarez</h1>
+                            <h1 className="text-base md:text-lg  font-bold mb-2">Scarlett Lee</h1>
                             <h1 className="text-sm md:text-base mb-2">Onlyfans Model</h1>
-                            <h1 className="text-xs md:text-sm">From $700 to $2000 per month</h1>
+                            <h1 className="text-xs md:text-sm">From $1700 to $2600 per month</h1>
 
                         </div>
                     </div>
@@ -193,13 +202,13 @@ const Gallery = () => {
                     <img
                         alt="Gallery"
                         className="w-full h-full filter brightness-85 opacity-90  object-center object-cover rounded shadow-sm min-h-48 hover:opacity-90"
-                        src={image1}
+                        src={model11}
                     />
                     <div className="absolute bottom-0 left-0 w-full h-full bg-gray-900 text-white p-2 opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-90 flex flex-col items-center justify-center">
                         <div className="bg-yellow-700 rounded-xl p-8 flex flex-col items-center justify-center opacity-100" >
-                            <h1 className="text-base md:text-lg  font-bold mb-2">Katerina Alvarez</h1>
+                            <h1 className="text-base md:text-lg  font-bold mb-2">Grace Davis</h1>
                             <h1 className="text-sm md:text-base mb-2">Onlyfans Model</h1>
-                            <h1 className="text-xs md:text-sm">From $700 to $2000 per month</h1>
+                            <h1 className="text-xs md:text-sm">From $200 to $1400 per month</h1>
 
                         </div>
                     </div>
@@ -210,28 +219,28 @@ const Gallery = () => {
                     <img
                         alt="Gallery"
                         className="w-full h-full filter brightness-85 opacity-90  object-center object-cover rounded shadow-sm min-h-48 hover:opacity-90"
-                        src={image1}
+                        src={model9}
                     />
                     <div className="absolute bottom-0 left-0 w-full h-full bg-gray-900 text-white p-2 opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-90 flex flex-col items-center justify-center">
                         <div className="bg-red-700 rounded-xl p-8 flex flex-col items-center justify-center opacity-100" >
-                            <h1 className="text-base md:text-lg  font-bold mb-2">Katerina Alvarez</h1>
+                            <h1 className="text-base md:text-lg  font-bold mb-2">Olivia Chen</h1>
                             <h1 className="text-sm md:text-base mb-2">Onlyfans Model</h1>
-                            <h1 className="text-xs md:text-sm">From $700 to $2000 per month</h1>
+                            <h1 className="text-xs md:text-sm">From $450 to $800 per month</h1>
                         </div>
                     </div>
 
                 </div>
                 <div className='relative w-full h-full  rounded shadow-sm col-span-2 row-span-2 min-h-96 md:col-start-1 md:row-start-1 ' >
                     <img
-                        src={image1}
+                        src={model4}
                         alt="Gallery"
                         className="filter brightness-85 opacity-90  grayscale object-center object-cover "
                     />
                     <div className="absolute bottom-0 left-0 w-full h-full bg-gray-900 text-white p-2 opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-90 flex flex-col items-center justify-center">
                         <div className="bg-yellow-700 rounded-xl p-8 flex flex-col items-center justify-center opacity-100" >
-                            <h1 className="text-base md:text-2xl font-bold mb-2">Katerina Alvarez</h1>
+                            <h1 className="text-base md:text-2xl font-bold mb-2">elena devis </h1>
                             <h1 className="text-sm md:text-lg mb-2">Onlyfans Model</h1>
-                            <h1 className="text-xs md:text-base">From $700 to $2000 per month</h1>
+                            <h1 className="text-xs md:text-base">From $1400 to $2900 per month</h1>
                         </div>
                     </div>
                 </div>

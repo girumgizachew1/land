@@ -1,16 +1,19 @@
-import React from 'react'
-import Slider from 'react-slick'
-import Agency from '../Components/Agency'
-import Calanderly from '../Components/Calanderly'
-import FeedBack from '../Components/Feedback'
-import { Footer } from '../Components/Footer'
-import Hero from '../Components/Hero'
-import Section from '../Components/Section'
-import { useDarkMode } from '../context/context'
-import Detailed from '../Components/Detailed'
+import React, { lazy, Suspense } from 'react';
+import Slider from 'react-slick';
+import Agency from '../Components/Agency';
+import Calanderly from '../Components/Calanderly';
+import FeedBack from '../Components/Feedback';
+import { Footer } from '../Components/Footer';
+import Hero from '../Components/Hero';
+import Section from '../Components/Section';
+import { useDarkMode } from '../context/context';
+import Detailed from '../Components/Detailed';
+import Faq from '../Components/faq';
+import Model from '../Components/models';
 
-function home() {
-  const { darkMode } = useDarkMode()
+
+function App() {
+  const { darkMode } = useDarkMode();
   const settings = {
     dots: false,
     infinite: true,
@@ -33,18 +36,19 @@ function home() {
   };
 
   return (
-    <div className='w-full h-full'>
+    <div className="w-full h-full">
       <div>
         <Hero />
-        <Section/>
-        <Detailed/>
+        <Section />
+        <Detailed />
         <Agency />
+        <Model />
+        <Faq />
         <FeedBack />
-        
+        <Footer />
       </div>
     </div>
   );
 }
 
-
-export default home
+export default App;
